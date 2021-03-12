@@ -46,14 +46,17 @@ export default function ListProducts() {
   return (
     <>
       <Flex
+        dir="row"
         alignItems="center"
         justifyContent="space-evenly"
-        dir="row"
         bg="white"
-        rounded="md"
-        my="12"
-        px="16"
+        mt={{ base: '4', lg: '12' }}
+        mb="12"
+        mx={{ base: '6', lg: '0' }}
+        px={{ base: '4', lg: '16' }}
         py="3"
+        rounded="md"
+        fontSize={{ base: 'sm', md: 'md' }}
         boxShadow="sm"
       >
         <Text
