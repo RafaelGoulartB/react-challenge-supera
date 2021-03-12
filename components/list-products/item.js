@@ -60,14 +60,14 @@ export default function ProductItem({ id, name, price, score, image }) {
   )
 }
 
-const FieldLabel = ({ children }) => {
+export const FieldLabel = ({ children }) => {
   return (
     <Text fontSize="md" fontWeight="bold" mr="3">
       {children}:
     </Text>
   )
 }
-const FieldText = ({ children }) => {
+export const FieldText = ({ children }) => {
   return (
     <Heading as="h3" fontSize="md" fontWeight="light" lineHeight="1.4rem">
       {children}
