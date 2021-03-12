@@ -1,10 +1,14 @@
+import { useContext } from 'react'
 import { Flex, Icon, Text } from '@chakra-ui/react'
 import { AiFillHome } from 'react-icons/ai'
 import { FaShoppingCart } from 'react-icons/fa'
 import Link from 'next/link'
 import SidebarContainer from './container'
+import { CartContext } from '../../contexts/cart'
 
 export default function Sidebar() {
+  const { onCart } = useContext(CartContext)
+
   return (
     <SidebarContainer>
       <Flex as="nav" flexDir={{ base: 'row', lg: 'column' }}>
@@ -35,7 +39,7 @@ export default function Sidebar() {
               h="16px"
               borderRadius="16px"
             >
-              1
+              {onCart.length}
             </Text>
             <Icon as={FaShoppingCart} w={7} h={7} color="gray.400" />
           </Flex>
