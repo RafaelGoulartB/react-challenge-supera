@@ -20,7 +20,12 @@ function Success() {
       alignItems="center"
     >
       <Icon as={FaCheckCircle} mb="8" color="green.600" w={16} h={16} />
-      <Text color="green.600" fontSize="3xl" fontWeight="bold">
+      <Text
+        color="green.600"
+        fontSize="3xl"
+        fontWeight="bold"
+        textAlign="center"
+      >
         Compra Realizada com Sucesso
       </Text>
     </Flex>
