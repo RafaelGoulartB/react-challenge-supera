@@ -1,11 +1,11 @@
 const styles = {
   global: {
     body: {
-      bg: "white",
-      color: "black",
-      overflowX: "hidden",
-    },
-  },
-};
+      bg: 'white',
+      color: 'black',
+      overflowX: 'hidden'
+    }
+  }
+}
 
-export default styles;
+export default styles

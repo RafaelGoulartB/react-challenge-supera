@@ -1,7 +1,7 @@
-import Head from "next/head";
-import { DefaultSeo } from "next-seo";
-import ThemeContainer from "../contexts/theme/theme-container";
-import seoConfig from "../config/seo";
+import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
+import ThemeContainer from '../contexts/theme/theme-container'
+import seoConfig from '../config/seo'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeContainer>
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

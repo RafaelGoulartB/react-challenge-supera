@@ -1,3 +1,3 @@
 export default function Home() {
-  return <p>Cart</p>;
+  return <p>Cart</p>
 }
