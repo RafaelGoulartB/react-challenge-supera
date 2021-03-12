@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import Image from 'next/image'
-import { Text, Flex, Heading } from '@chakra-ui/react'
+import { Text, Flex, Heading, Button } from '@chakra-ui/react'
 import ItemContainer from './item-container'
+import { FaShoppingCart } from 'react-icons/fa'
 
 export default function ProductItem({ id, name, price, score, image }) {
+  const [isInCart, setIsInCart] = useState(false)
+
   return (
     <ItemContainer>
       <Image
@@ -14,7 +18,7 @@ export default function ProductItem({ id, name, price, score, image }) {
       />
       {/* Texts */}
       <Flex flexDir="column" alignItems="flex-start">
-        <Flex flexDir="column" minH={{ sm: 'none', lg: '280px' }}>
+        <Flex flexDir="column" mb="8">
           <Heading
             as="h2"
             fontSize="lg"
@@ -31,6 +35,26 @@ export default function ProductItem({ id, name, price, score, image }) {
           </Flex>
         </Flex>
       </Flex>
+
+      {isInCart ? (
+        <Button
+          leftIcon={<FaShoppingCart />}
+          colorScheme="red"
+          variant="solid"
+          onClick={() => setIsInCart(!isInCart)}
+        >
+          Remove do Carrinho
+        </Button>
+      ) : (
+        <Button
+          leftIcon={<FaShoppingCart />}
+          colorScheme="teal"
+          variant="solid"
+          onClick={() => setIsInCart(!isInCart)}
+        >
+          Adicionar ao Carrinho
+        </Button>
+      )}
     </ItemContainer>
   )
 }

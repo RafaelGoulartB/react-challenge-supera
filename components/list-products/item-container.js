@@ -16,7 +16,7 @@ export default function ItemContainer({ children }) {
       boxShadow="0px 0px 20px rgb(231, 231, 231)"
       transition="all 0.6s"
       _hover={{
-        transform: 'scale(1.03)'
+        transform: 'scale(1.02)'
       }}
     >
       {children}
