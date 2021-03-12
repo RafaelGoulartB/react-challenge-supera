@@ -1,34 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">React Challenge Supera</h1>
 
-## Getting Started
+<p align="center">	
+   <a href="https://www.linkedin.com/in/rafael-goulartb/">
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-fe4d3b?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <a href="https://github.com/RafaelGoulartB/react-challenge-supera#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-fe4d3b.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/RafaelGoulartB/react-challenge-supera/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-fe4d3b.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/RafaelGoulartB/react-challenge-supera/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-fe4d3b.svg" target="_blank" />
+  </a>
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/RafaelGoulartB/react-challenge-supera?color=fe4d3b" />
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/RafaelGoulartB/react-challenge-supera?color=fe4d3b" />
+  <img alt="" src="https://img.shields.io/github/repo-size/RafaelGoulartB/react-challenge-supera?color=fe4d3b" />
+</p>
 
-First, run the development server:
 
+> Challenge: O desafio consiste em construir a interface de um ecommerce de games utilizando React Web.
+
+<div align="center">
+  <sub>This project. Built with ❤︎ by
+    <a href="https://github.com/RafaelGoulartB">Rafael Goulart</a> and
+    <a href="https://github.com/RafaelGoulartB/react-challenge-supera/graphs/contributors">
+      contributors
+    </a>
+  </sub>
+</div>
+
+<br />
+<div align="center">
+  <img src="./.github/screenshots/screenshot-1.png" width="700">
+  <img src="./.github/screenshots/screenshot-2.png" width="700">
+</div>
+
+# :pushpin: Table of Contents
+
+* [Website](#eyes-website)
+* [Technologies](#computer-technologies)
+* [Features](#rocket-features)
+* [How to run](#construction_worker-how-to-run)
+* [Found a bug? Missing a specific feature?](#bug-issues)
+* [Contributing](#tada-contributing)
+* [License](#closed_book-license)
+
+# :eyes: Website
+👉 
+
+# :computer: Technologies
+This project was made using the follow technologies:
+
+* [Next.js](https://nextjs.org/)     
+* [Chakra UI](https://chakra-ui.com/docs/getting-started)      
+* [Vercel](https://vercel.com/)    
+
+# :rocket: Features
+
+- List Games
+- Add Games to Cart
+- Calculate the Frete
+- Sort Games
+
+# :construction_worker: How to run
+**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then:**
+
+### Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
+yarn install
+```
+### Run Aplication
+```bash 
+yarn dev 
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# :bug: Issues
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Feel free to **file a new issue** with a respective title and description on the the [React Challenge Supera](https://github.com/RafaelGoulartB/react-challenge-supera/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+# :tada: Contributing
+First of all, thank you for being interested in helping out, your time is always appreciated in every way. :100:
 
-To learn more about Next.js, take a look at the following resources:
+Here's some tips:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Check the [issues page](https://github.com/RafaelGoulartB/react-challenge-supera/issues) for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
+* Feature requests are welcomed! Provide some details on why it would be helpful for you and others, explain how you're using bull-board and if possible even some screenshots if you are willing to mock something!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
-## Deploy on Vercel
+# :closed_book: License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Released in 2020.
+This project is under the [MIT license](./LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with love by [RafaelGoulartB](https://github.com/RafaelGoulartB) 🚀
