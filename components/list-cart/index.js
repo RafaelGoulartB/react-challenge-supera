@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, IconButton } from '@chakra-ui/react'
 import { FaTrash } from 'react-icons/fa'
 import { useContext } from 'react'
 import { CartContext } from '../../contexts/cart'
