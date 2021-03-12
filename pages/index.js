@@ -1,3 +1,9 @@
+import { Box } from '@chakra-ui/react'
+
 export default function Home() {
-  return <p>Home</p>;
+  return (
+    <>
+      <Box m={2}>Home</Box>
+    </>
+  )
 }
