@@ -7,7 +7,7 @@ export default function PageContainer({ children }) {
       flexDir="column"
       w={{ sm: '100%', lg: '85%' }}
       mx="auto"
-      paddingX={{ sm: '10', lg: '12' }}
+      paddingX={{ sm: '10', lg: '24' }}
       boxSizing="border-box"
     >
       {children}
