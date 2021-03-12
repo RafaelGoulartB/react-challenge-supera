@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import Image from 'next/image'
 import { Text, Flex, Heading, Button } from '@chakra-ui/react'
 import ItemContainer from './item-container'
 import { FaShoppingCart } from 'react-icons/fa'
+import { CartContext } from '../../contexts/cart'
 
 export default function ProductItem({ id, name, price, score, image }) {
-  const [isInCart, setIsInCart] = useState(false)
+  const { onCart, addToCart, removeFromCart } = useContext(CartContext)
 
   return (
     <ItemContainer>
@@ -36,12 +37,12 @@ export default function ProductItem({ id, name, price, score, image }) {
         </Flex>
       </Flex>
 
-      {isInCart ? (
+      {onCart.includes(id) ? (
         <Button
           leftIcon={<FaShoppingCart />}
           colorScheme="red"
           variant="solid"
-          onClick={() => setIsInCart(!isInCart)}
+          onClick={() => removeFromCart(id)}
         >
           Remove do Carrinho
         </Button>
@@ -50,7 +51,7 @@ export default function ProductItem({ id, name, price, score, image }) {
           leftIcon={<FaShoppingCart />}
           colorScheme="teal"
           variant="solid"
-          onClick={() => setIsInCart(!isInCart)}
+          onClick={() => addToCart(id)}
         >
           Adicionar ao Carrinho
         </Button>
