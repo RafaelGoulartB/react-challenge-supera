@@ -5,7 +5,7 @@ import ItemContainer from './item-container'
 import { FaShoppingCart } from 'react-icons/fa'
 import { CartContext } from '../../contexts/cart'
 
-export default function ProductItem({ id, name, price, score, image }) {
+export default function ProductItem({ id, name, price, image }) {
   const { onCart, addToCart, removeFromCart } = useContext(CartContext)
 
   return (
