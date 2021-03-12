@@ -1,10 +1,11 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
+import ItemContainer from './item-container'
 
 export default function ProductItem({ id, name, price, score, image }) {
   return (
-    <Flex dir="column" mr="20" mb="20">
+    <ItemContainer>
       <Text>{name}</Text>
       <Text>{price}</Text>
-    </Flex>
+    </ItemContainer>
   )
 }

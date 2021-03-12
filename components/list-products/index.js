@@ -44,14 +44,14 @@ export default function ListProducts() {
   }
 
   return (
-    <>
+    <Flex flexDir="column" alignItems="center">
       <Flex
+        width="100%"
         dir="row"
         alignItems="center"
         justifyContent="space-evenly"
         bg="white"
-        mt={{ base: '4', lg: '12' }}
-        mb="12"
+        my={{ base: '4', lg: '12' }}
         mx={{ base: '6', lg: '0' }}
         px={{ base: '4', lg: '16' }}
         py="3"
@@ -93,7 +93,7 @@ export default function ListProducts() {
           Popularidade
         </Text>
       </Flex>
-      <Flex flexWrap="wrap">
+      <Flex flexWrap="wrap" justifyContent="center" mx="auto">
         {productsState.map(product => (
           <ProductItem
             key={product.id}
@@ -105,6 +105,6 @@ export default function ListProducts() {
           />
         ))}
       </Flex>
-    </>
+    </Flex>
   )
 }

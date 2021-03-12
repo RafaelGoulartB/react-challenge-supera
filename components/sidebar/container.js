@@ -13,6 +13,7 @@ export default function SidebarContainer({ children }) {
       justifyContent="center"
       p="5"
       boxShadow={{ base: 'xs', lg: 'lg' }}
+      zIndex="999"
     >
       {children}
     </Flex>
