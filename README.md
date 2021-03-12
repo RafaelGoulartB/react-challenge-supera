@@ -2,20 +2,20 @@
 
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">
-      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-fe4d3b?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Rafael Goulart" src="https://img.shields.io/badge/-RafaelGoulartB-fd8b00?style=flat&logo=Linkedin&logoColor=white" />
    </a>
   <a href="https://github.com/RafaelGoulartB/react-challenge-supera#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-fe4d3b.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-fd8b00.svg" target="_blank" />
   </a>
   <a href="https://github.com/RafaelGoulartB/react-challenge-supera/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-fe4d3b.svg" target="_blank" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-fd8b00.svg" target="_blank" />
   </a>
   <a href="https://github.com/RafaelGoulartB/react-challenge-supera/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-fe4d3b.svg" target="_blank" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-fd8b00.svg" target="_blank" />
   </a>
-  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/RafaelGoulartB/react-challenge-supera?color=fe4d3b" />
-  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/RafaelGoulartB/react-challenge-supera?color=fe4d3b" />
-  <img alt="" src="https://img.shields.io/github/repo-size/RafaelGoulartB/react-challenge-supera?color=fe4d3b" />
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/RafaelGoulartB/react-challenge-supera?color=fd8b00" />
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/RafaelGoulartB/react-challenge-supera?color=fd8b00" />
+  <img alt="" src="https://img.shields.io/github/repo-size/RafaelGoulartB/react-challenge-supera?color=fd8b00" />
 </p>
 
 
