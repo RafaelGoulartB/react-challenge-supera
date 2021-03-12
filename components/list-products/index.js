@@ -93,7 +93,12 @@ export default function ListProducts() {
           Popularidade
         </Text>
       </Flex>
-      <Flex flexWrap="wrap" justifyContent="center" mx="auto" mb="8">
+      <Flex
+        flexWrap="wrap"
+        justifyContent="center"
+        mx="auto"
+        mb={{ base: '28', lg: '8' }}
+      >
         {productsState.map(product => (
           <ProductItem
             key={product.id}
