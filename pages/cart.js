@@ -7,6 +7,7 @@ import products from '../data/products.json'
 import { CartContext } from '../contexts/cart'
 import { FieldLabel, FieldText } from '../components/list-products/item'
 import { CgCheckO } from 'react-icons/cg'
+import Link from 'next/link'
 
 export default function Cart() {
   const { onCart } = useContext(CartContext)
@@ -65,15 +66,17 @@ export default function Cart() {
               <FieldText>R$ {total}</FieldText>
             </Flex>
 
-            <Button
-              leftIcon={<CgCheckO />}
-              colorScheme="teal"
-              variant="solid"
-              mt="4"
-              mb="8"
-            >
-              Finalizar Compra
-            </Button>
+            <Link href="/success">
+              <Button
+                leftIcon={<CgCheckO />}
+                colorScheme="teal"
+                variant="solid"
+                mt="4"
+                mb="8"
+              >
+                Finalizar Compra
+              </Button>
+            </Link>
           </Flex>
         </Flex>
       ) : (

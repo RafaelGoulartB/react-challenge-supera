@@ -14,12 +14,17 @@ export function CartProvider({ children }) {
     setOnCart(updatedList)
   }
 
+  function clearCart() {
+    setOnCart([])
+  }
+
   return (
     <CartContext.Provider
       value={{
         onCart,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        clearCart
       }}
     >
       {children}
