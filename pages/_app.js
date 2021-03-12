@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeContainer>
         <DefaultSeo {...seoConfig} />
-        <Flex FlexDir={{ sm: 'column', lg: 'row' }}>
+        <Flex dir={{ base: 'column', lg: 'row' }}>
           <Sidebar />
           <Component {...pageProps} />
         </Flex>

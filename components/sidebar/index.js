@@ -7,12 +7,12 @@ import SidebarContainer from './container'
 export default function Sidebar() {
   return (
     <SidebarContainer>
-      <Flex flexDir={{ sm: 'row', lg: 'column' }}>
+      <Flex as="nav" flexDir={{ base: 'row', lg: 'column' }}>
         <Link href="/">
           <Icon
             as={AiFillHome}
-            mb={{ sm: '0', lg: '7' }}
-            mr={{ sm: '16', lg: '0' }}
+            mb={{ base: '0', lg: '12' }}
+            mr={{ base: '16', lg: '0' }}
             w={7}
             h={7}
             color="gray.400"
@@ -35,7 +35,7 @@ export default function Sidebar() {
               h="16px"
               borderRadius="16px"
             >
-              0
+              1
             </Text>
             <Icon as={FaShoppingCart} w={7} h={7} color="gray.400" />
           </Flex>
