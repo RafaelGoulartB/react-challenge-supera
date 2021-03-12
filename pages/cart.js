@@ -15,9 +15,27 @@ export default function Cart() {
     onCart.includes(product.id)
   )
 
-  const subTotal = 100
-  const frete = 10
-  const total = 110
+  function calculateSubTotal() {
+    const value = productsFiltered
+      .reduce(
+        (accumulator, currentProduct) => accumulator + currentProduct.price,
+        0
+      )
+      .toFixed(2)
+
+    return value
+  }
+
+  function calculateFrete() {
+    const value = onCart.length * 10
+    if (calculateSubTotal() > 250) return 0
+
+    return value
+  }
+
+  const subTotal = calculateSubTotal()
+  const frete = calculateFrete()
+  const total = (+subTotal + frete).toFixed(2)
 
   return (
     <PageContainer>
@@ -35,16 +53,16 @@ export default function Cart() {
           <Flex flexDir="column">
             <Flex flexDir="row" alignItems="center" mb="2">
               <FieldLabel>Sub-Total</FieldLabel>
-              <FieldText>R${subTotal}</FieldText>
+              <FieldText>R$ {subTotal}</FieldText>
             </Flex>
             <Flex flexDir="row" alignItems="center" mb="2">
               <FieldLabel>Frete</FieldLabel>
-              <FieldText>R${frete}</FieldText>
+              <FieldText>{frete ? `R$ ${frete}` : 'Frete Grátis'}</FieldText>
             </Flex>
             <Divider my="6" />
             <Flex flexDir="row" alignItems="center" mb="4" color="green">
               <FieldLabel>Total</FieldLabel>
-              <FieldText>R${total}</FieldText>
+              <FieldText>R$ {total}</FieldText>
             </Flex>
 
             <Button
