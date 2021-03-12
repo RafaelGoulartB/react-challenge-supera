@@ -30,6 +30,8 @@
 <br />
 <div align="center">
   <img src="./.github/screenshots/screenshot-1.png" width="700">
+  <br />
+  <br />
   <img src="./.github/screenshots/screenshot-2.png" width="700">
 </div>
 
