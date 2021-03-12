@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react'
 export const CartContext = createContext({})
 
 export function CartProvider({ children }) {
-  const [onCart, setOnCart] = useState([102, 99])
+  const [onCart, setOnCart] = useState([])
 
   function addToCart(id) {
     setOnCart([...onCart, id])
