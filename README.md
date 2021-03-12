@@ -24,9 +24,6 @@
 <div align="center">
   <sub>This project. Built with ❤︎ by
     <a href="https://github.com/RafaelGoulartB">Rafael Goulart</a> and
-    <a href="https://github.com/RafaelGoulartB/react-challenge-supera/graphs/contributors">
-      contributors
-    </a>
   </sub>
 </div>
 
