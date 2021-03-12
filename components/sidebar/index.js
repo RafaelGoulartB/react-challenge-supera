@@ -2,27 +2,24 @@ import { Flex, Icon, Text } from '@chakra-ui/react'
 import { AiFillHome } from 'react-icons/ai'
 import { FaShoppingCart } from 'react-icons/fa'
 import Link from 'next/link'
+import SidebarContainer from './container'
 
 export default function Sidebar() {
   return (
-    <Flex
-      display={{ sm: 'none', lg: 'flex' }}
-      position="fixed"
-      flexDir="column"
-      alignItems="center"
-      justifyContent="center"
-      height="100vh"
-      width="8%"
-      maxW="120px"
-      p="5"
-      boxShadow="lg"
-    >
-      <Flex flexDir="column">
+    <SidebarContainer>
+      <Flex flexDir={{ sm: 'row', lg: 'column' }}>
         <Link href="/">
-          <Icon as={AiFillHome} mb="7" w={7} h={7} color="gray.400" />
+          <Icon
+            as={AiFillHome}
+            mb={{ sm: '0', lg: '7' }}
+            mr={{ sm: '16', lg: '0' }}
+            w={7}
+            h={7}
+            color="gray.400"
+          />
         </Link>
         <Link href="/cart">
-          <Flex flexDir="column" position="relative" w={8} h={12}>
+          <Flex flexDir="column" position="relative" w={8}>
             <Text
               position="absolute"
               top="0"
@@ -44,6 +41,6 @@ export default function Sidebar() {
           </Flex>
         </Link>
       </Flex>
-    </Flex>
+    </SidebarContainer>
   )
 }

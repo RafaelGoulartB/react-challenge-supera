@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 import ThemeContainer from '../contexts/theme/theme-container'
 import seoConfig from '../config/seo'
-import Sidebar from '../components/sidebar'
+import Sidebar from '../components/sidebar/'
 import { Flex } from '@chakra-ui/react'
 
 function MyApp({ Component, pageProps }) {
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeContainer>
         <DefaultSeo {...seoConfig} />
-        <Flex dir="row">
+        <Flex FlexDir={{ sm: 'column', lg: 'row' }}>
           <Sidebar />
           <Component {...pageProps} />
         </Flex>
