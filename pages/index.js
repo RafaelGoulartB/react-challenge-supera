@@ -1,16 +1,10 @@
-import { Box, Flex } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import PageContainer from '../components/page-container'
 
 export default function Home() {
   return (
-    <Flex
-      as="main"
-      flexDir="column"
-      w={{ sm: '100%', lg: '85%' }}
-      mx="auto"
-      paddingX={{ sm: '10', lg: '8' }}
-      boxSizing="border-box"
-    >
+    <PageContainer>
       <Box m={2}>Home</Box>
-    </Flex>
+    </PageContainer>
   )
 }
