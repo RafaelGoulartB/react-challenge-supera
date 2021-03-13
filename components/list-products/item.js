@@ -44,7 +44,7 @@ export default function ProductItem({ id, name, price, image }) {
           variant="solid"
           onClick={() => removeFromCart(id)}
         >
-          Remove do Carrinho
+          Remover do Carrinho
         </Button>
       ) : (
         <Button
