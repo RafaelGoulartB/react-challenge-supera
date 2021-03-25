@@ -11,7 +11,11 @@ export default function Sidebar() {
 
   return (
     <SidebarContainer>
-      <Flex as="nav" flexDir={{ base: 'row', lg: 'column' }}>
+      <Flex
+        as="nav"
+        flexDir={{ base: 'row', lg: 'column' }}
+        _hover={{ cursor: 'pointer' }}
+      >
         <Link href="/">
           <Icon
             as={AiFillHome}
@@ -23,7 +27,12 @@ export default function Sidebar() {
           />
         </Link>
         <Link href="/cart">
-          <Flex flexDir="column" position="relative" w={8}>
+          <Flex
+            flexDir="column"
+            position="relative"
+            w={8}
+            _hover={{ cursor: 'pointer' }}
+          >
             <Text
               position="absolute"
               top="0"
