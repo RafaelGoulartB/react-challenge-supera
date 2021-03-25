@@ -29,7 +29,9 @@ export default function Cart() {
 
   function calculateFrete() {
     const value = onCart.length * 10
-    if (calculateSubTotal() > 250) return 0
+    const freeFreteValue = 250
+
+    if (calculateSubTotal() >= freeFreteValue) return 0
 
     return value
   }
