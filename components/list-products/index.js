@@ -10,12 +10,17 @@ export default function ListProducts() {
 
   const [productsState, setProductsState] = useState(products)
 
+  function toggleSortStyle(sort) {
+    setIsProductsSortedByScore(sort === 'score' ? true : false)
+    setIsProductsSortedByPrice(sort === 'price' ? true : false)
+    setIsProductsSortedByName(sort === 'name' ? true : false)
+  }
+
   function toggleSort(sort) {
+    toggleSortStyle(sort)
+
     switch (sort) {
       case 'name':
-        setIsProductsSortedByScore(false)
-        setIsProductsSortedByPrice(false)
-        setIsProductsSortedByName(true)
         setProductsState(
           products.sort((a, b) => {
             const name_a = a.name.toLowerCase()
@@ -29,15 +34,9 @@ export default function ListProducts() {
         )
         break
       case 'price':
-        setIsProductsSortedByScore(false)
-        setIsProductsSortedByName(false)
-        setIsProductsSortedByPrice(true)
         setProductsState(products.sort((a, b) => a.price - b.price))
         break
       case 'score':
-        setIsProductsSortedByName(false)
-        setIsProductsSortedByPrice(false)
-        setIsProductsSortedByScore(true)
         setProductsState(products.sort((a, b) => b.score - a.score))
         break
     }
