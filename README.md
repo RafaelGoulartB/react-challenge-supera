@@ -19,7 +19,7 @@
 </p>
 
 
-> Challenge: O desafio consiste em construir a interface de um ecommerce de games utilizando React .
+> Challenge: O desafio consiste em construir a interface de um ecommerce de games utilizando React.
 
 <div align="center">
   <sub>This project. Built with ❤︎ by
